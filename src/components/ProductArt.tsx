@@ -1,0 +1,2 @@
+import { Bird, Droplets, Fan, Wheat } from 'lucide-react';
+export default function ProductArt({type='nipple'}:{type?:'nipple'|'feed'|'fan'|'bird'}) { return <div className={`product-art art-${type}`}><div className="art-orbit orbit-one"/><div className="art-orbit orbit-two"/><div className="art-object">{type==='nipple'?<Droplets size={88}/>:type==='feed'?<Wheat size={88}/>:type==='fan'?<Fan size={88}/>:<Bird size={88}/>}</div><span className="art-label">UNG G A S / EQUIPMENT</span></div> }
